@@ -1,0 +1,39 @@
+
+<form [formGroup]="createproduct" (ngSubmit)="onSubmit()">
+    <div class="form-row align-items-center">
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup">Name</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Name</div>
+              </div>
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter the name of the product" formControlName="productname"><div *ngIf="submitform && createproduct.controls['productname'].invalid"><div *ngIf="submitform && createproduct.controls['product'].errors.required" class="warningdiv">Product name is required.</div></div></div>
+            </div>
+          
+      <div class="col-auto">
+        <label class="sr-only" for="inlineFormInputGroup">Price</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Price</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter the price of the product" formControlName="price">
+          <div *ngIf="submitform && createproduct.controls['price'].invalid"><div *ngIf="submitform && createproduct.controls['price'].errors.required" class="warningdiv">Price is required.</div></div>
+        </div>
+      </div>
+      <div class="col-auto">
+        <label class="sr-only" for="inlineFormInputGroup">Stock</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Stock</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter the stock available for the product" formControlName="stock">
+          <div *ngIf="submitform && createproduct.controls['stock'].invalid"><div *ngIf="submitform && createproduct.controls['stock'].errors.required" class="warningdiv">Stock must be mentioned</div></div>
+        </div>
+      </div>      
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-2" [disabled]="createproduct.pristine">Create Product</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="router_space"></div>

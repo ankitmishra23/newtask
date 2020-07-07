@@ -1,0 +1,13 @@
+form{
+    width:900px;
+    height: 500px;
+    float: left;
+}
+fieldset{
+    margin-left: 100px;
+    border:1px lightblue solid;
+    margin-top: 100px;
+}
+.warningdiv{
+    color: red;
+}

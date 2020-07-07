@@ -1,0 +1,23 @@
+
+<div>
+    
+    <div class="tablediv">
+        <table>
+        <th>
+        <tr>
+        <td><input type="text" placeholder="Enter product details" id="pid"></td>
+    <td>
+        <button type="button" class="btn btn-dark" (click)="search()">Search</button>
+    </td></tr>
+    </th>
+    
+    </table></div>
+    <div class="editdiv">
+</div>
+    
+    <table class="table table-dark" >          <div *ngFor="let det of productdetail|keyvalue;">  {{det.key}}:{{det.value}}</div>            
+        
+    </table>
+    <h1>Enter the name of the food to be searched..(eg-pizza)</h1>
+
+</div>

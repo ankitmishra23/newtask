@@ -1,0 +1,14 @@
+.list-group{
+    width: 300px;
+    float: left;
+}
+#render_space{
+    background-color: lightgray;
+    width: 1200px;
+    height: 700px;
+    float:right;
+
+}
+body{
+    background-color: whitesmoke;
+}
